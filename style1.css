@@ -1,0 +1,218 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 100%;
+    min-height:100vh ;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+.logo{
+    width: 60px;
+    margin: 30px 0;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin: 30px 0;
+    display: none;
+    
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    list-style: none;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+}
+nav ul li a:hover{
+    color: aquamarine;
+    font-size: 17px;
+}
+
+.row{
+    display: flex;
+}
+.col-1{
+    flex-basis: 40%;
+    background-color: antiquewhite;
+    padding: 30px;
+    position: relative;
+    margin-top: 50px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.col-1 h3,p{
+    color: grey;
+    letter-spacing: 5px;
+}
+.col-1 h1,h4,p{
+    margin-top: 20px;
+}
+
+.col-1 button{
+    width: 100px;
+    cursor: pointer;
+    margin-top: 25px;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background:linear-gradient(to left ,rgb(127, 217, 217),rgb(27, 137, 137))  ;
+
+    font-size: 15px;
+    font-weight: 800;
+    border: none;
+    display: flex;
+    
+    border-radius: 10px;
+    transition:width 1s;
+    transition: all 0.5s;
+}
+.pan{
+    display: none;
+    width: 30px;
+    transition: all 1s;
+    letter-spacing: 1px;
+    margin-left: -10px;
+    color: brown;
+    
+}
+
+.col-1 button:hover .pan{
+    display: block;
+    z-index: 55;
+    width: 30px;
+    margin-left: 20px;
+
+}
+.col-1 button:hover{
+    display: flex;
+    width: 160px;
+    align-items: center;
+    justify-content: space-around;
+    color: antiquewhite;
+}   
+.col-1::after{
+    content: "";
+    width: 20px;
+    height: 100%;
+    top: 0;
+    left: -50px;
+    position: absolute;
+    background:linear-gradient(rgb(127, 217, 217),rgb(80, 111, 111))  ;
+    z-index: 55;
+}
+.col-2{
+    margin-top: 50px;
+    margin-left: 5%;
+    flex-basis: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+
+}
+.col-2 img{
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.5s;
+    
+}
+.col-2 img:hover{
+    transform: rotate(36deg);
+}
+
+.color-box{
+
+width: 80%;
+height: 100%;
+position: absolute;
+top: 0;
+right: 0;
+background-color: antiquewhite;
+z-index: -1;
+border-radius: 20px;
+
+}
+
+
+.add-card{
+margin-left: 20%;
+display: flex;
+flex-direction: column;
+align-items: center;
+cursor: pointer;
+}
+.add-card img{
+    
+    margin-top: 90%;
+    width: 40px;
+    transition: 1s;
+}
+.add-card p{
+    font-size: 20px;
+    letter-spacing: unset;
+    margin-top: -10px;
+    cursor: pointer;
+}
+.add-card img:hover{
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width:700px){
+nav ul{
+width: 100%;
+background:linear-gradient(to left ,rgb(127, 217, 217),rgb(27, 137, 137))  ;
+position: absolute;
+top: 75px;
+right: 0;
+z-index: 888;
+}
+nav ul li{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+nav ul li a{
+    color:aliceblue;
+
+}
+.menu-icon{ 
+    display: block;
+}
+#menuList{
+    overflow: hidden;
+    transition: all 1s;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+}

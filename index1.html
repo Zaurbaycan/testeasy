@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>new</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="technology.png" alt="" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href=""> MenuItem1</a></li>
+                    <li><a href=""> MenuItem2</a></li>
+                    <li><a href=""> MenuItem3</a></li>
+                    <li><a href=""> MenuItem4</a></li>
+                </ul>
+            </nav>
+            <img src="briefcase.gif" alt="" class="menu-icon" onclick="toggleMenu()">
+
+           
+        </div>
+
+            <div class="row">
+                <div class="col-1">
+                <h1>Indi Ala Bilersen</h1>
+                <h1>Tezol</h1>
+                <h4 > Indi Almaga Calis</h4>
+                <p>(Sen cani indi almaga basla)</p>
+                <button type="button">Alirsan? <img src="arrow-right.png" class="pan"></button>
+                </div>
+                <div class="col-2">
+                    <img src="controller.png" alt="">
+                    <div class="color-box"></div>
+                    <div class="add-card"><img src="payment.png" alt=""><p><small>Add To Card</small></p></div>
+                </div>
+            </div>
+    </div>
+
+
+
+    <script>
+        var menuList=document.getElementById("menuList");
+        menuList.style.maxHeight="0px";
+        function toggleMenu() {
+            if(menuList.style.maxHeight=="0px"){
+                menuList.style.maxHeight="130px"
+            }
+            else{
+                menuList.style.maxHeight="0px"
+            }
+        }
+
+    </script>
+</body>
+</html>
